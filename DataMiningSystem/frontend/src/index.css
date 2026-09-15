@@ -1,0 +1,55 @@
+
+/* CSS Variables for Light Mode */
+:root {
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+/* CSS Variables for Dark Mode */
+.dark {
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+}
+
+/* Card & Theme Container Utilities */
+.theme-card {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-main);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-muted {
+  color: var(--text-muted);
+}
+
+/* Drag & Drop Highlight */
+.drag-active {
+  border-color: #2563eb !important;
+  background-color: rgba(37, 99, 235, 0.08) !important;
+}
+
+/* Semantic Type Badges */
+.badge-numerical { background-color: #e0f2fe; color: #0369a1; }
+.badge-categorical { background-color: #fef3c7; color: #b45309; }
+.badge-identifier { background-color: #f3e8ff; color: #6b21a8; }
+.badge-datetime { background-color: #dcfce7; color: #15803d; }
+
+/* Dark mode semantic badge overrides for contrast */
+.dark .badge-numerical { background-color: #075985; color: #e0f2fe; }
+.dark .badge-categorical { background-color: #78350f; color: #fef3c7; }
+.dark .badge-identifier { background-color: #581c87; color: #f3e8ff; }
+.dark .badge-datetime { background-color: #14532d; color: #dcfce7; }
+
+/* Issue Severity Badges */
+.severity-high { background-color: #fee2e2; color: #b91c1c; }
+.severity-medium { background-color: #ffedd5; color: #c2410c; }
+.severity-low { background-color: #fef9c3; color: #a16207; }
+
+.dark .severity-high { background-color: #7f1d1d; color: #fecaca; }
+.dark .severity-medium { background-color: #7c2d12; color: #ffedd5; }
+.dark .severity-low { background-color: #713f12; color: #fef9c3; }
